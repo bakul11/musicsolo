@@ -1,0 +1,444 @@
+/**************************************************************
+***************************************************************
+	
+	Template Name: Photo gallarey
+	Template URI: http://www.gointech.com
+	Description: photo related template
+	Author: Bakul Ray
+	Author URI: http://www.gaintech.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+*************************************************************
+*************************************************************
+
+	1. Typography
+	2. Header Section
+	3. Photo-Section
+	4. Photo2-Section
+	5. gallarey-section
+	6. Subcribe-Section
+	7. Download-Section
+	8. Footer-Section
+
+**************************************************************
+**************************************************************/
+
+
+/************** 1. Typography ************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Roboto Slab', serif;
+}
+h2{
+	text-transform:capitalize;
+	color:#0A183D;
+	font-size:30px;
+}
+
+h2{
+	text-transform:capitalize;
+	color:#0A183D;
+	font-size:30px;
+}
+
+p{
+	font-size: 15px;
+	color: #6a7080;
+	line-height: 1.8;
+	font-weight: 200;
+	font-family: 'Montserrat', sans-serif;
+}
+ul{
+	list-style:none;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+.btn-success{
+	text-transform:capitalize;
+	color: #fff;
+	background-color: #28a745;
+	border-color: #28a745;
+	position:relative;
+	border-radius: 50px;
+	z-index:1;
+}
+.btn-success::after{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:0%;
+	height:100%;
+	background:red;
+	display:inline-block;
+	border-radius: 50px;
+	z-index:-1;
+	transition:.4s;
+}
+.btn-success:hover::after{
+	width:100%;
+}
+
+
+/**************** Header-Section Start Form Here ****************/
+.header-section {
+	background: #08192D;
+	padding: 35px 80px;
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+.menu ul{
+	display:flex;
+	justify-content:center;
+}
+.menu ul li{
+	margin:0px 23px;
+}
+.menu ul li a {
+	text-decoration: none;
+	display: block;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-size: 17px;
+}
+.menu ul li a:hover{
+	color:#FC0254;
+}
+.login-section ul{
+	display:flex;
+	justify-content:center;
+}
+.login-section ul li {
+	margin: 0px 8px;
+}
+.login-section ul li a {
+	text-decoration: none;
+	display: block;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-size: 17px;
+	font-weight:200;
+}
+.login-section ul li:last-child a{
+	color:#FC0254;
+	text-transform:inherit;
+}
+
+
+
+/******** Slider-Section Start ********/
+.slider-section {
+	background: #0A183D;
+	padding: 100px 0px;
+	position: relative;
+	margin-top: 112px;
+}
+.slider-text h1 {
+	color: #FFFFFF;
+	font-size: 50px;
+	font-weight: 900;
+	font-family: 'Montserrat', sans-serif;
+}
+.slider-text h1 span{
+	color:#FC0254;
+}
+.slider-text p {
+	color: #FFFFFF;
+	padding: 10px 0px;
+}
+.slider-text .login-section a:first-child {
+	background: #FC0254;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 50px;
+	text-transform:uppercase;
+}
+.slider-text .login-section a:last-child {
+	background: #383B70;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 50px;
+	text-transform:uppercase;
+}
+
+
+
+/******* Event-Section Start *******/
+.event-section{
+	padding:100px 0px;
+}
+
+.event-left h2 {
+	font-size: 53px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: inherit;
+}
+.event-right p {
+	font-weight: 200;
+	color: #6A7080;
+	font-size: 16px;
+}
+.event-right .event-btn a{
+	background: #FC0254;
+	border: none;
+	padding: 15px 55px;
+	border-radius: 50px;
+	text-transform:uppercase;
+	
+}
+
+/***** Service-Section Start *****/
+.service-section {
+	background-image: url('images/how-to-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: auto;
+	padding: 50px 0px;
+}
+.service-title h2 {
+	font-size: 53px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: inherit;
+	color: #FFFFFF;
+	padding: 50px 0px;
+}
+.service-logo .hi-icon {
+	position: relative;
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	background: #fc0254;
+}
+.service-logo img {
+	position: absolute;
+	left: 37px;
+	top: 21px;
+}
+.service-item .service-text h2 {
+	font-size: 23px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	text-transform: inherit;
+	color: #FFFFFF;
+	padding-top: 21px;
+}
+.service-item .service-text p {
+	font-weight: 200;
+	color: #6A7080;
+	font-size: 16px;
+}
+
+
+
+/***** gallarey-Section Start *****/
+.gallarey-section {
+	padding: 50px 0px;
+}
+.gallarey-item img {
+	border-radius: 20px;
+}
+.gallarey-item h2 {
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: inherit;
+	padding: 17px 0px;
+}
+
+
+
+
+/*****Subscription-Section Start *****/
+.subscrip-section {
+	background:#0A183D;
+	padding: 50px 0px;
+}
+.subscrip-left h2 {
+	font-size: 46px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: inherit;
+	color: #FFFFFF;
+}
+.subscrip-left h4 {
+	font-size: 27px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	text-transform: inherit;
+	color: #FC0254;
+	padding: 10px 0px;
+}
+.subscrip-left p {
+	font-weight: 200;
+	color: #6A7080;
+}
+
+.subscrip-left .subscrip-btn a {
+	background: #FC0254;
+	border: none;
+	padding: 15px 55px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	margin:20px 0px;
+}
+
+.subscrip-right .subscrip-area{
+	background:#1C294A;
+	border-radius:20px;
+}
+.subscrip-right .subscrip-area ul {
+	padding: 56px 168px;
+}
+.subscrip-right .subscrip-area ul li {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	text-transform: inherit;
+	color: #FFFFFF;
+	line-height: 50px;
+}
+.subscrip-right .subscrip-area ul li i {
+	padding: 4px 5px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background: #AC084C;
+	margin-right: 10px;
+}
+
+
+/****** Team-Section Start ******/
+.team-section{
+}
+.team-section .team-item img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+.team-section .team-item h2{
+	font-size:20px;
+	margin:0px;
+	padding-top:20px;
+}
+.team-section .team-item p {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0px;
+	text-transform: capitalize;
+}
+
+
+
+	
+/******** Footer-Section Start ********/
+.footer-section {
+	background: #232323;
+	padding: 50px 0px 13px 0px;
+	margin-top: 80px;
+}
+.footer-widget{
+	padding:20px 0px;
+}
+
+.footer-widget h2 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.footer-widget p,
+.fot-text p{
+	font-size:14px;
+	padding:10px 0px;
+}
+	
+.footer-widget .subscribe-btn{
+	position:relative;
+}
+.subscribe-btn input[type="email"] {
+	display: block;
+	width: 100%;
+	height: 36px;
+	border: 1px solid transparent;
+}
+.subscribe-btn input[type="submit"] {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: #c82626;
+	border: 1px solid transparent;
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-family: 'Roboto Slab', serif;
+}
+.footer-widget .address {
+	margin: 0px;
+	color:#888888;
+	font-weight: 500;
+}
+.footer-widget .address span{
+	color:#FFFFFF;
+	
+}
+.footer-widget .address i{
+	padding-right: 5px;
+}
+
+
+.footer-widget .address .add-title {
+	font-weight: 500;
+	padding-right: 5px;
+	font-size: 13px;
+}
+.footer-menu ul {
+	list-style: none;
+	padding: 10px 0px;
+}
+.footer-menu ul li {
+	line-height: 27px;
+}
+.footer-menu ul li a::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
+	display: inline-block;
+	padding-right: 6px;
+	vertical-align: middle;
+	font-weight: 900;
+}
+
+
+.footer-menu ul li a {
+	text-decoration: none;
+	display: block;
+	color: #888888;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 400;
+}
+.footer-section hr {
+	width: 100%;
+	border-bottom: 1px solid #796a6a;
+	padding: 14px 0px;
+}
+
+

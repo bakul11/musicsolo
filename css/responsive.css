@@ -1,0 +1,79 @@
+@media all and (max-width :1153px){
+	.menu ul li {
+		margin: 0px 13px;
+	}
+	.login-section ul li {
+		margin: 0px 4px;
+	}
+}
+
+@media all and (max-width :991px){
+	.gallarey-item{
+		padding: 7px 0px;
+	}
+	.team-item{
+		padding: 20px 0px;
+	}
+	.slider-thub {
+		margin: 65px auto;
+	}
+	.logo {
+		text-align: center;
+		margin: 20px auto;
+	}
+	.slider-section {
+		margin-top: 202px;
+	}
+}
+
+@media all and (max-width :767px){
+	.service-item{
+		padding: 20px 0px;
+	}
+	.subscrip-right .subscrip-area ul {
+		padding: 20px 100px;
+	}
+	
+}
+
+@media all and (max-width :551px){
+	.menu ul {
+		display: block;
+		text-align: center;
+		background: #502386;
+	}
+	.header-section {
+		background: #08192D;
+		padding: 0px;
+	}
+	.menu ul li a {
+		padding: 15px 0px;
+	}
+	.menu ul li a:hover{
+		background:red;
+		color:#FFFFFF;
+	}
+	.menu ul li {
+		margin:0px;
+	}
+	.header-section {
+		position: inherit;
+	}
+	.slider-section {
+		margin-top: 0px;
+	}
+}
+
+@media all and (max-width :441px){
+	.slider-text .login-section a:first-child {
+		margin: 10px auto;
+	}
+		
+}
+
+@media all and (max-width :422px){
+	.subscrip-right .subscrip-area ul {
+		padding: 20px 10px;
+	}
+	
+}
